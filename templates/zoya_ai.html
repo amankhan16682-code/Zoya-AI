@@ -99,7 +99,15 @@
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
-    </style>
+    
+        .send-button {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex; justify-content: center; align-items: center;
+            font-size: 18px; color: #ff69b4; cursor: pointer;
+            margin-right: 10px; border: 1px solid rgba(255,105,180,0.3);
+        }
+</style>
 </head>
 <body>
     <div class="header">
@@ -125,6 +133,7 @@
     <!-- Naya Stylish Input Box -->
     <div class="input-container">
         <input type="text" id="msgInput" placeholder="Ask Zoya anything...">
+        <div class="send-button" id="sendBtn" onclick="sendTextMessage()">➤</div>
         <div class="mic-button" id="micBtn">🎙️</div>
     </div>
 
